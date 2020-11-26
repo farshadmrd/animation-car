@@ -1,0 +1,74 @@
+@charset "utf-8";
+*{
+	direction: rtl;
+	margin: 0;
+	padding: 0;
+}
+#top {position: relative;
+}
+img[alt="car"]{
+	width: 450px;
+	height: 150px;
+	position: absolute;
+	bottom:50px;
+	left: 50px;
+	animation: car 6s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+img[alt="street"]{
+	width:100%;
+	height: 500px;
+	
+}
+img[alt="tire-back"]{
+	width: 80px;
+	height:80px;
+	position: absolute;
+	bottom: 35px;
+	left: 85px;
+	animation: tire 6s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+img[alt="tire-forward"]{
+	width: 80px;
+	height:80px;
+	position: absolute;
+	bottom: 35px;
+	left: 380px;
+	animation: tire 6s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	
+}
+
+@keyframes car{
+	0%{
+		transform: translateX(0px);
+	
+	
+	}
+	100%{
+		transform: translateX(1000px);
+/*		transform: rotate(360deg);*/
+	}
+}
+
+@keyframes tire{
+	0%{
+		transform:translate(0px) rotate(0deg);
+	}
+	100%{
+		transform:translate(1000px)rotate(360deg);
+	}
+}
+
+
+
+
+
+
+
+
+
